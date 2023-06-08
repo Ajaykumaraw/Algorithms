@@ -6,5 +6,21 @@
    target : 5
 */
 
+/*
+    seudo code for this problem.
+    given : mid, low, high,target,firstOccr[mid-1],lastOccur[mid+1];
+    mid = (low + high)/2;
+    while(low < high)
+    if(mid == target) return mid;
+    else check 
+        if(mid < target) low = mid + 1;
+        if(mid > target) high = mid -1;
 
+
+    once target found, find occurance
+    isoccur = true;
+    while(isoccur)
+        if(mid == mid -1) isoccure = true;
+            mid = mid -1 ;
+*/
 
