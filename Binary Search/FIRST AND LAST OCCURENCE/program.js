@@ -23,13 +23,16 @@
         if(mid == mid -1) isoccure = true;
             mid = mid -1 ;
 */
-
+console.log('working');
 function findTarget(nums,target,length){
     let low = 0;
     let high = length-1;
     let mid = (low+high)/2;
     while(low<high){
         if(nums[mid] === target) return mid;
+        console.log('working');
+        low++;
+
     }
 }
 
@@ -37,3 +40,4 @@ let nums = [2,5,5,5,6,6,8,9,9,9];
 let target = 6;
 let length = nums.length;
 const index = findTarget(nums,target,length);
+console.log(index);
