@@ -38,13 +38,25 @@ function FirstandLast(arr,x){
     }
     return -1
 }
-function findFandL(arr,mid){
-        let FOC;
-        if(arr[mid] == arr[mid -1]){
-            FOC = mid -1;
-        }
+
+
+// function findFandL(arr,mid){
+//         let FOC;
+//         if(arr[mid] == arr[mid -1]){
+//             FOC = mid -1;
+//         }
+// }
+
+const arr = [2,5,5,6,6,6,8,10];
+const result = FirstandLast(arr,6);
+while(arr[result]==arr[result-1]){
+    if(arr[result]===arr[result-1]){
+        return console.log("first occ:",result-1)
+    }else{
+        return console.log("first occ:",result-1);
+    }
+    result--;
 }
 
-const arr = [2,4,5,6,6,6,8,10];
-const result = FirstandLast(arr,10);
-console.log(result);
+
+//console.log(result);
