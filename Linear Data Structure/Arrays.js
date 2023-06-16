@@ -47,8 +47,9 @@ array.map((item)=>{
 })
 
 for (const iterator of array) {
-    console.log(iterator);
+   // console.log(iterator);
 }
+
 
 //console.log(array);
 
