@@ -34,7 +34,22 @@ array.includes(5) // It returns true if element is in array else false.
 array.indexOf(7) // Array.indexOf it return the index of element if it is present in array
                  // else it returns -1;
 
+/* Traversal
+    we have few method for array traversal
+    like forearch, map, for of loop
+*/
+array.forEach((item)=>{
+   // console.log(item);
+})
 
-console.log(array);
+array.map((item)=>{
+   // console.log(item);
+})
+
+for (const iterator of array) {
+    console.log(iterator);
+}
+
+//console.log(array);
 
 
