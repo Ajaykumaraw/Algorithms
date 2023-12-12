@@ -3,23 +3,12 @@
     insertion deletion seaching and traversal.
 */
 class LinkedList{
-    constructor(head){
-        this.head = null
+    constructor(head = null){
+        this.head = head
     }
-
-    print(){
+    appendlist(newnode){
         let node = this.head
-        if(!node) console.log("empty list")
-        while(node.next){
-            node = node.next
-            console.log(node.data)
-        }
-    }
-
-    appendList(newnode){
-        let node = this.head
-        if(node ==null) {
-            console.log("node null")
+        if(node == null){
             this.head = newnode
             return
         }
@@ -28,6 +17,15 @@ class LinkedList{
         }
         node.next = newnode
     }
+    print(){
+        let node = this.head
+        while(node){
+            node = node.next
+             console.log(node)
+        }
+        console.log(null)
+    }
+
 }
 
 class Node{
@@ -38,7 +36,11 @@ class Node{
 }
 
 
-let linkedlist = new LinkedList();
-let node = new Node(5);
-linkedlist.appendList(node)
-linkedlist.print();
+let linkedlist = new LinkedList()
+let node = new Node(5)
+linkedlist.appendlist(node)
+linkedlist.appendlist(new Node(7))
+linkedlist.appendlist(new Node(3))
+linkedlist.appendlist(new Node(8))
+// console.log(linkedlist)
+linkedlist.print()
